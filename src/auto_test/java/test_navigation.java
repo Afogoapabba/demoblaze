@@ -1,13 +1,7 @@
-
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
-import com.microsoft.playwright.Response;
 import com.microsoft.playwright.options.AriaRole;
 import org.junit.jupiter.api.Test;
-
-
-
-import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class test_navigation extends TestBase {
@@ -25,13 +19,13 @@ public class test_navigation extends TestBase {
     }
     @Test
     void navigateToContact() {
-        Locator locator = page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Contact"));
-        locator.click();
+        Locator navigationLink = page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Contact"));
+        navigationLink.click();
     }
     @Test
     void navigateToAboutUs() {
-        Locator locator = page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("About us"));
-        locator.click();
+        Locator navigationLink = page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("About us"));
+        navigationLink.click();
     }
     @Test
     void navigateToCart() {
@@ -41,13 +35,13 @@ public class test_navigation extends TestBase {
     }
     @Test
     void navigateToLogin() {
-        Locator locator = page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Log in"));
-        locator.click();
+        Locator navigationLink = page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Log in"));
+        navigationLink.click();
     }
     @Test
     void navigateToSignUp() {
-        Locator locator = page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Sign up"));
-        locator.click();
+        Locator navigationLink = page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Sign up"));
+        navigationLink.click();
     }
 //    void navigateToPage() {
 //        page.navigate("https://www.demoblaze.com/");
