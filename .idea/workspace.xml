@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c78dd0c0-d0d6-4109-9878-78a382a920bf" name="Changes" comment="commit 1">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Base/java/TestBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/auto_test/java/test_login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auto_test/java/test_navigation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_test/java/test_navigation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/auto_test/java/test_contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Base/java/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Base/java/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +58,27 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.test_login.checkForm">
+  <component name="RunManager" selected="JUnit.test_contact.sendMessage">
+    <configuration name="test_contact.checkForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demoblaze" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test_contact" />
+      <option name="METHOD_NAME" value="checkForm" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_contact.sendMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demoblaze" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test_contact" />
+      <option name="METHOD_NAME" value="sendMessage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="test_login.checkForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoblaze" />
       <option name="PACKAGE_NAME" value="" />
@@ -85,26 +99,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test_navigation.navigateToCart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demoblaze" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="test_navigation" />
-      <option name="METHOD_NAME" value="navigateToCart" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test_navigation.navigateToLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demoblaze" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="test_navigation" />
-      <option name="METHOD_NAME" value="navigateToLogin" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="test_navigation.navigateToSignUp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoblaze" />
       <option name="PACKAGE_NAME" value="" />
@@ -115,26 +109,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="demoblaze" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="demoblaze" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.test_contact.sendMessage" />
+        <item itemvalue="JUnit.test_contact.checkForm" />
         <item itemvalue="JUnit.test_login.checkForm" />
         <item itemvalue="JUnit.test_login.populateForm" />
         <item itemvalue="JUnit.test_navigation.navigateToSignUp" />
-        <item itemvalue="JUnit.test_navigation.navigateToLogin" />
-        <item itemvalue="JUnit.test_navigation.navigateToCart" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695210824867</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="commit 1">
+      <option name="closed" value="true" />
+      <created>1695219113361</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695219113361</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

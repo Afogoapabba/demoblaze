@@ -2,6 +2,10 @@
 import com.microsoft.playwright.*;
 import org.junit.jupiter.api.*;
 
+import javax.swing.*;
+
+import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
+
 public class TestBase {
 
     // Shared between all tests in this class and subclasses.
@@ -16,8 +20,8 @@ public class TestBase {
     @BeforeAll
     static void launchBrowser() {
         playwright = Playwright.create();
-        //browser = playwright.chromium().launch();
-        browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false).setSlowMo(1000));
+        browser = playwright.chromium().launch();
+        //browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false).setSlowMo(1000));
     }
 
     @AfterAll
@@ -29,13 +33,16 @@ public class TestBase {
     void createContextAndPage() {
         context = browser.newContext();
         page = context.newPage();
-        Response response = page.navigate("https://www.demoblaze.com/");
+        page.navigate("https://www.demoblaze.com/");
+
     }
 
     @AfterEach
     void closeContext() {
         context.close();
     }
+
+
 
 
 }
