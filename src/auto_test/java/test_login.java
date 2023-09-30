@@ -24,12 +24,5 @@ public class test_login extends TestBase {
         assertThat(tbUsername).hasValue(username);
         assertThat(tbPassword).hasValue(password);
 
-
-
-
-       // assertThat(page.getByRole(AriaRole.HEADING,new Page.GetByRoleOptions().setName("Log in"))).isVisible();
-       // assertThat(page.getByLabel("Username")).isVisible();
-
-
     }
 }

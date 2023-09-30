@@ -4,6 +4,8 @@ import org.junit.jupiter.api.*;
 
 import javax.swing.*;
 
+import java.util.Random;
+
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
 public class TestBase {
@@ -16,12 +18,27 @@ public class TestBase {
     protected BrowserContext context;
     protected Page page;
 
+    //Random string generator
+    public static String generateRandomString(int length) {
+        String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        StringBuilder randomString = new StringBuilder(length);
+        Random random = new Random();
+
+        for (int i = 0; i < length; i++) {
+            int randomIndex = random.nextInt(characters.length());
+            char randomChar = characters.charAt(randomIndex);
+            randomString.append(randomChar);
+        }
+
+        return randomString.toString();
+    }
+
 
     @BeforeAll
     static void launchBrowser() {
         playwright = Playwright.create();
-        browser = playwright.chromium().launch();
-        //browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false).setSlowMo(1000));
+//        browser = playwright.chromium().launch();
+        browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false).setSlowMo(1000));
     }
 
     @AfterAll
