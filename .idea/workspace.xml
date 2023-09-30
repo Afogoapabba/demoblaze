@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c78dd0c0-d0d6-4109-9878-78a382a920bf" name="Changes" comment="Added test for contact.&#10;and dialoghandler">
-      <change afterPath="$PROJECT_DIR$/src/auto_test/java/test_about_us.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/auto_test/java/test_cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/auto_test/java/test_sign_up.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/base/java/ContactPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/base/java/LogInPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Base/java/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/java/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auto_test/java/test_contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_test/java/test_contact.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/auto_test/java/test_login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_test/java/test_login.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +26,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -62,7 +64,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.test_sign_up.checkForm">
+  <component name="RunManager" selected="JUnit.test_login.invalidLogin">
     <configuration name="test_about_us.watchVideo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoblaze" />
       <option name="PACKAGE_NAME" value="" />
@@ -73,21 +75,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test_contact.checkForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demoblaze" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="test_contact" />
-      <option name="METHOD_NAME" value="checkForm" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="test_contact.sendMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoblaze" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="test_contact" />
       <option name="METHOD_NAME" value="sendMessage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_login.invalidLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demoblaze" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test_login" />
+      <option name="METHOD_NAME" value="invalidLogin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -115,11 +117,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.test_login.invalidLogin" />
+        <item itemvalue="JUnit.test_contact.sendMessage" />
         <item itemvalue="JUnit.test_sign_up.checkForm" />
         <item itemvalue="JUnit.test_about_us.watchVideo" />
         <item itemvalue="JUnit.test_navigation.navigateToSignUp" />
-        <item itemvalue="JUnit.test_contact.sendMessage" />
-        <item itemvalue="JUnit.test_contact.checkForm" />
       </list>
     </recent_temporary>
   </component>
