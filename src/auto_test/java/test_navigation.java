@@ -43,12 +43,7 @@ public class test_navigation extends TestBase {
         Locator navigationLink = page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Sign up"));
         navigationLink.click();
     }
-//    void navigateToPage() {
-//        page.navigate("https://www.demoblaze.com/");
-//        page.locator("input[name=\"search\"]").click();
-//        page.locator("input[name=\"search\"]").fill("playwright");
-//        page.locator("input[name=\"search\"]").press("Enter");
-//        assertEquals("https://en.wikipedia.org/wiki/Playwright", page.url());
+
 }
 
 

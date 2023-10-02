@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c78dd0c0-d0d6-4109-9878-78a382a920bf" name="Changes" comment="Added test for contact.&#10;and dialoghandler">
-      <change afterPath="$PROJECT_DIR$/src/base/java/ContactPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/base/java/LogInPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/auto_test/java/test_home.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/base/java/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/base/java/ProductPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/base/java/SignUpPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/auto_test/java/test_contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_test/java/test_contact.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/auto_test/java/test_login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_test/java/test_login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auto_test/java/test_navigation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_test/java/test_navigation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auto_test/java/test_sign_up.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_test/java/test_sign_up.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/java/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/java/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,21 +46,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -64,52 +69,52 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.test_login.invalidLogin">
-    <configuration name="test_about_us.watchVideo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demoblaze" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="test_about_us" />
-      <option name="METHOD_NAME" value="watchVideo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test_contact.sendMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.test_home.addProductToCart">
+    <configuration name="test_contact.BlankMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoblaze" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="test_contact" />
-      <option name="METHOD_NAME" value="sendMessage" />
+      <option name="METHOD_NAME" value="BlankMessage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test_login.invalidLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="test_home.addProductToCart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoblaze" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="test_login" />
-      <option name="METHOD_NAME" value="invalidLogin" />
+      <option name="MAIN_CLASS_NAME" value="test_home" />
+      <option name="METHOD_NAME" value="addProductToCart" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test_navigation.navigateToSignUp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="test_home.changeCategory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoblaze" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="test_navigation" />
-      <option name="METHOD_NAME" value="navigateToSignUp" />
+      <option name="MAIN_CLASS_NAME" value="test_home" />
+      <option name="METHOD_NAME" value="changeCategory" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test_sign_up.checkForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="test_home.verifyCategoryList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoblaze" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="test_sign_up" />
-      <option name="METHOD_NAME" value="checkForm" />
+      <option name="MAIN_CLASS_NAME" value="test_home" />
+      <option name="METHOD_NAME" value="verifyCategoryList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_home.verifyProductListCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demoblaze" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test_home" />
+      <option name="METHOD_NAME" value="verifyProductListCount" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -117,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.test_login.invalidLogin" />
-        <item itemvalue="JUnit.test_contact.sendMessage" />
-        <item itemvalue="JUnit.test_sign_up.checkForm" />
-        <item itemvalue="JUnit.test_about_us.watchVideo" />
-        <item itemvalue="JUnit.test_navigation.navigateToSignUp" />
+        <item itemvalue="JUnit.test_home.addProductToCart" />
+        <item itemvalue="JUnit.test_home.verifyProductListCount" />
+        <item itemvalue="JUnit.test_home.verifyCategoryList" />
+        <item itemvalue="JUnit.test_home.changeCategory" />
+        <item itemvalue="JUnit.test_contact.BlankMessage" />
       </list>
     </recent_temporary>
   </component>

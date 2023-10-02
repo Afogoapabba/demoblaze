@@ -31,14 +31,13 @@ public class test_login extends TestBase {
     }
     @Test
     void validLogin() {
-        //Create a valid user via sign UP
 
         // Create and open page
         LogInPage logInPage = new LogInPage(page);
         logInPage.openLogInPage();
-        // Generate test data
-        String username = generateRandomString(15);
-        String password = generateRandomString(25);
+        // Get static test-data
+        String username = getStaticUser();
+        String password = getStaticPassword();
         // Fill form
         logInPage.fillForm(username,password);
         // Assert that test data is filled in
@@ -53,6 +52,11 @@ public class test_login extends TestBase {
 
         // Log in
         logInPage.loginButton.click();
+
+        // Asser correct user is logged in
+        Locator usernameLink = page.locator("#nameofuser");
+        assertThat(usernameLink).containsText(staticUser);
+
 
     }
 }

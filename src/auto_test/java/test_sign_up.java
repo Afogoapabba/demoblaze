@@ -10,31 +10,29 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class test_sign_up extends TestBase{
     @Test
     void newSignUp() {
-        Locator navigationLink = page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Sign up"));
-        navigationLink.click();
-        String username = generateRandomString(7);
-        String password = generateRandomString(7);
+        // Create and open page
+        SignUpPage signUpPage = new SignUpPage(page);
+        signUpPage.openSignUpPage();
+        // Generate test data
+        String username = generateRandomString(15);
+        String password = generateRandomString(25);
 
-        Locator tbUsername = page.locator("#sign-username");
-        Locator tbPassword = page.locator("#sign-password");
-        Locator signUpButton = page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Sign up"));
-        Locator closeButton = page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Close"));
-        //Populate form
-        tbUsername.fill(username);
-        tbPassword.fill(password);
-
-        //Assertion
-        assertThat(tbUsername).hasValue(username);
-        assertThat(tbPassword).hasValue(password);
-
+        // Fill form
+        signUpPage.fillForm(username,password);
+        // Assert that test data is filled in
+        assertThat(signUpPage.tbUsername).hasValue(username);
+        assertThat(signUpPage.tbPassword).hasValue(password);
+        // Create an onDialog handler to validate the dialog before accepting
         page.onDialog(dialog -> {
             assertEquals("alert", dialog.type());
             assertTrue(dialog.message().contains("Sign up successful."));
-
             dialog.accept();
         });
+        signUpPage.signUp();
+        // Sign in
 
-        signUpButton.click();
+
+
 
     }
 }

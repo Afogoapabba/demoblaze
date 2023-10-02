@@ -9,6 +9,18 @@ import java.util.Random;
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
 public class TestBase {
+    final String staticUser = "Admin4ff86e74872b";
+
+    final String staticPassword = "Password";
+
+    public String getStaticUser() {
+        return staticUser;
+    }
+
+    public String getStaticPassword() {
+        return staticPassword;
+    }
+
 
     // Shared between all tests in this class and subclasses.
     protected static Playwright playwright;

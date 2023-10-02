@@ -1,9 +1,3 @@
-import com.microsoft.playwright.Dialog;
-import com.microsoft.playwright.Locator;
-import com.microsoft.playwright.Page;
-import com.microsoft.playwright.options.AriaRole;
-import org.hamcrest.MatcherAssert;
-import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
@@ -11,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class test_contact extends TestBase {
     @Test
-    void sendMessage(){
+    void validMessage(){
         // Create and open page
         ContactPage contactPage = new ContactPage(page);
         contactPage.openContactPage();
@@ -36,6 +30,28 @@ public class test_contact extends TestBase {
         //send form
         contactPage.sendForm();
 
+    }
+    @Test
+    void BlankMessage(){
+        // Create and open page
+        ContactPage contactPage = new ContactPage(page);
+        contactPage.openContactPage();
+
+
+        // Assert that test data is filled in
+        assertThat(contactPage.contactEmailTB).isEmpty();
+        assertThat(contactPage.contactNameTB).isEmpty();
+        assertThat(contactPage.contactMessageBox).isEmpty();
+
+        // Create an onDialog handler to validate the dialog before accepting
+        page.onDialog(dialog -> {
+            assertEquals("alert", dialog.type());
+            assertFalse(dialog.message().contains("Thanks for the message!!"));
+            dialog.accept();
+        });
+
+        //send form
+        contactPage.sendForm();
 
     }
 }
